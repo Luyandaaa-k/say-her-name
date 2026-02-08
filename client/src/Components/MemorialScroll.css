@@ -1,0 +1,56 @@
+.scroll-container {
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #000000, #1a1a1a);
+  position: relative;
+}
+
+.scroll-content {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  animation: scroll-up 30s linear infinite;
+}
+
+
+@keyframes scroll-up {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
+
+.victim-card {
+  text-align: center;
+  color: #ffffff;
+  padding: 40px 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.victim-card h3 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+
+.victim-card p {
+  font-size: 1.2em;
+  margin: 5px 0;
+  opacity: 0.8;
+}
+
+.end-message {
+  text-align: center;
+  color: #ffffff;
+  padding: 100px 20px;
+  font-size: 1.5em;
+}
+
+.end-message h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
