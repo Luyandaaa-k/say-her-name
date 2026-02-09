@@ -1,10 +1,11 @@
 import './App.css';
-import MemorialScroll from  './Components/MemorialScroll';  
+import SubmissionForm from './Components/SubmissionForm';
 
 function App() {
   return (
     <div className="App">
-      <MemorialScroll />
+      <SubmissionForm/>
+    
     </div>
   );
 }
