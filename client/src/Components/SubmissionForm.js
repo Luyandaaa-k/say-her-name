@@ -76,16 +76,7 @@ function SubmissionForm() {
           />
         </div>
 
-        <div className="form-group">
-          <label htmlFor="cause">Cause of Death (Optional)</label>
-          <textarea
-            id="cause"
-            rows="3"
-            placeholder="Brief description (optional, sensitive)"
-            value={causeOfDeath}
-            onChange={(e) => setCauseOfDeath(e.target.value)}
-          />
-        </div>
+       
          <div className="form-group">
           <label htmlFor="cause">Cause of Death (Optional)</label>
           <textarea
