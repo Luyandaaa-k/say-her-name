@@ -54,3 +54,22 @@
   font-size: 3em;
   margin-bottom: 20px;
 }
+
+.candle-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #ff9800 0%, #ff6f00 100%);
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 0.9em;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 152, 0, 0.3);
+}
+
+.candle-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 152, 0, 0.5);
+  background: linear-gradient(135deg, #ffa726 0%, #ff8a00 100%);
+}

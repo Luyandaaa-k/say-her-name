@@ -1,0 +1,120 @@
+.candle-page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(circle at center, #1a1a1a 0%, #000000 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  color: #ffffff;
+  font-size: 2em;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.close-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.6);
+  transform: rotate(90deg);
+}
+.candle-container {
+  text-align: center;
+  color: #ffffff;
+}
+
+.victim-name {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+
+.victim-location {
+  font-size: 1.2em;
+  opacity: 0.7;
+  margin-bottom: 50px;
+}
+.flame-wrapper {
+  position: relative;
+  width: 80px;
+  height: 150px;
+  margin: 0 auto 40px;
+}
+.candle-stick {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 80px;
+  background: linear-gradient(to bottom, #f5f5dc 0%, #e6e6c8 100%);
+  border-radius: 10px 10px 0 0;
+}
+.flame {
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 60px;
+  background: linear-gradient(to top, #ff9800 0%, #ffeb3b 50%, #fff9c4 100%);
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  box-shadow: 0 0 20px #ff9800, 0 0 40px #ff6f00;
+  animation: flicker 2s infinite;
+}
+.flame-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 15px;
+  height: 35px;
+  background: linear-gradient(to top, #ffeb3b 0%, #fff9c4 100%);
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  animation: flicker-inner 1.5s infinite;
+}
+.flame-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 15px;
+  height: 35px;
+  background: linear-gradient(to top, #ffeb3b 0%, #fff9c4 100%);
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  animation: flicker-inner 1.5s infinite;
+}
+@keyframes flicker-inner {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  33% {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+  66% {
+    transform: translate(-50%, -50%) scale(0.9);
+  }
+}
+.candle-message {
+  font-size: 1.2em;
+  margin-top: 40px;
+  opacity: 0.9;
+}
+
+.candle-message strong {
+  color: #ffeb3b;
+  font-size: 1.3em;
+}
